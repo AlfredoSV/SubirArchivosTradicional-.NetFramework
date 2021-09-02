@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    
+    <form action="Home/SubirArchivo" method="post" enctype="multipart/form-data">
+
+        <input type="text" name="nombreAr" />
+        <input type="file" name="file"  />
+
+        <input type="submit" value="Subir"/>
+
+    </form>
+
+
+    <form action="Home/SubirMultiArchivo" method="post" enctype="multipart/form-data">
+
+      
+        <input type="file" name="files" multiple />
+
+        <input type="submit" value="Subir" />
+
+    </form>
+
+</body>
+</html>
